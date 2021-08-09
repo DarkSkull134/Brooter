@@ -1,3 +1,4 @@
+import requests
 
 print("#########################################################################################################################   ")
 print(" ##   _____________      _____________       ______________  ______________  _______________________                    ##   ")
@@ -47,7 +48,8 @@ print("\n\nThis may take a while...")
 print("\n\n")
 
 # reading from wordlist and storing in content
-wordlist = input('Type location to wordlist file:    ')
+
+wordlist = input('Type location to wordlist file:    ') 
 
 with open(wordlist) as f:
     contents = f.read()
